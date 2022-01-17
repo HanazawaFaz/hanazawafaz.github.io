@@ -35,6 +35,16 @@
 
 
 
+   <style>
+    body{
+       background-image: url(/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
 
 <body>
     <header class="navbar-fixed">
@@ -43,7 +53,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/leave.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">ZxWu的博客</span>
                 </a>
@@ -92,7 +102,7 @@
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
-      <span>档案</span>
+      <span>文章</span>
     </a>
     
   </li>
@@ -103,7 +113,7 @@
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
-      <span>关于</span>
+      <span>关于我</span>
     </a>
     
   </li>
@@ -131,7 +141,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/leave.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">ZxWu的博客</div>
         <div class="logo-desc">
@@ -184,7 +194,7 @@
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
-			档案
+			文章
 		</a>
           
         </li>
@@ -195,7 +205,7 @@
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
-			关于
+			关于我
 		</a>
           
         </li>
@@ -230,7 +240,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                「驾一叶扁舟，举匏樽以相属」
+                记录平而不凡的生活
                 
             </div>
 
@@ -240,7 +250,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        strings: ['走走停停看风景','进进退退避风雨'],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -257,7 +267,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + new Date().getDay()  + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -351,9 +361,10 @@
             
             <span id="year">2022</span>
             <a href="/about" target="_blank">ZxWu</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
+            <!--
+                |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+                |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            //--><br>
             
             
             
@@ -406,11 +417,11 @@
                         diffMinutes * minutes) / seconds);
                     if (startYear == todayYear) {
                         document.getElementById("year").innerHTML = todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                        document.getElementById("sitetime").innerHTML = "已经摸鱼了 " + diffDays + " 天 " + diffHours +
                             " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     } else {
                         document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                        document.getElementById("sitetime").innerHTML = "已经摸鱼了 " + diffYears + " 年 " + diffDays +
                             " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     }
                 }
@@ -422,15 +433,19 @@
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
 
-    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:zxlukes@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
 
 
+    <a href="https://twitter.com/zxlukes" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/zxlukes" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1352709494" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1352709494" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -592,6 +607,11 @@ $(function () {
     
 
 	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
     
